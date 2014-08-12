@@ -9,14 +9,15 @@ import (
 	"strings"
 
 	"github.com/polyglottis/language_server/operations"
+	"github.com/polyglottis/platform/config"
 	"github.com/polyglottis/platform/language"
 )
 
-var operationsAddr = flag.String("op-tcp", ":16653", "TCP address of operations RPC server")
 var inputFile = flag.String("in", "", "Input file (tab-delimited, columns: [code, iso693-1, iso693-3, iso693-6, comment])")
 
 func main() {
-	flag.Parse()
+
+	conf := config.Get()
 
 	if *inputFile == "" {
 		flag.Usage()
@@ -30,7 +31,7 @@ func main() {
 
 	filtered := filterComments(lines)
 
-	c, err := operations.NewClient(*operationsAddr)
+	c, err := operations.NewClient(conf.LanguageOp)
 	if err != nil {
 		log.Fatalln(err)
 	}

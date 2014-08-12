@@ -2,19 +2,18 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"log"
 
 	"github.com/polyglottis/language_server/operations"
+	"github.com/polyglottis/platform/config"
 )
 
-var operationsAddr = flag.String("op-tcp", ":16653", "TCP address of operations RPC server")
-
 func main() {
-	flag.Parse()
 
-	c, err := operations.NewClient(*operationsAddr)
+	conf := config.Get()
+
+	c, err := operations.NewClient(conf.LanguageOp)
 	if err != nil {
 		log.Fatalln(err)
 	}
