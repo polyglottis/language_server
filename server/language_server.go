@@ -6,7 +6,7 @@ import (
 
 	"github.com/polyglottis/language_server/database"
 	"github.com/polyglottis/platform/language"
-	localeRpc "github.com/polyglottis/platform/language/rpc"
+	languageRpc "github.com/polyglottis/platform/language/rpc"
 	"github.com/polyglottis/rpc"
 )
 
@@ -16,13 +16,21 @@ type Server struct {
 	db *database.DB
 }
 
-// New creates the rpc language server, as required by polyglottis/locale/rpc
-func New(db *database.DB, serverAddr string) *rpc.Server {
-	s := &Server{
-		db: db,
-	}
+func NewServerDB(db *database.DB) *Server {
+	return &Server{db: db}
+}
 
-	return localeRpc.NewLanguageServer(s, serverAddr)
+func NewServer(dbFile string) (*Server, error) {
+	db, err := database.Open(dbFile)
+	if err != nil {
+		return nil, err
+	}
+	return NewServerDB(db), nil
+}
+
+// New creates the rpc language server, as required by polyglottis/language/rpc
+func New(s *Server, serverAddr string) *rpc.Server {
+	return languageRpc.NewLanguageServer(s, serverAddr)
 }
 
 func (s *Server) GetCode(code string) (language.Code, error) {

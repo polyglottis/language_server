@@ -27,9 +27,9 @@ func (c *Client) Insert(comment string, language *language.Language) error {
 	return c.c.Call("OpRpcServer.Insert", InsertArgs{
 		Comment:   comment,
 		Code:      string(language.Code),
-		ISO_693_1: language.ISO_693_1,
-		ISO_693_3: language.ISO_693_3,
-		ISO_693_6: language.ISO_693_6,
+		ISO_639_1: language.ISO_639_1,
+		ISO_639_3: language.ISO_639_3,
+		WikiData:  language.WikiData,
 	}, nil)
 }
 

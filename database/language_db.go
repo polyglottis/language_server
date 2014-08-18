@@ -29,13 +29,13 @@ func Open(file string) (*DB, error) {
 			Type:       "text",
 			Constraint: "primary key not null",
 		}, {
-			Field: "iso_693_1",
+			Field: "iso_639_1",
 			Type:  "text",
 		}, {
-			Field: "iso_693_3",
+			Field: "iso_639_3",
 			Type:  "text",
 		}, {
-			Field: "iso_693_6",
+			Field: "wikiData",
 			Type:  "text",
 		}, {
 			Field: "comment",
@@ -63,7 +63,7 @@ func (db *DB) Insert(comment string, language *language.Language) error {
 	if language == nil {
 		return fmt.Errorf("Language should not be nil")
 	}
-	_, err := db.db.Exec("insert into languages values (?,?,?,?,?)", string(language.Code), language.ISO_693_1, language.ISO_693_3, language.ISO_693_6, comment)
+	_, err := db.db.Exec("insert into languages values (?,?,?,?,?)", string(language.Code), language.ISO_639_1, language.ISO_639_3, language.WikiData, comment)
 	return err
 }
 

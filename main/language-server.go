@@ -20,7 +20,7 @@ func main() {
 		log.Fatalln(err)
 	}
 
-	main := server.New(db, c.Language)
+	main := server.New(server.NewServerDB(db), c.Language)
 	op := operations.NewOpServer(db, c.LanguageOp)
 	p := rpc.NewServerPair("Language Server", main, op)
 
