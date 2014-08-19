@@ -1,4 +1,184 @@
-en	en	eng	eng	English
-# test comment
-
-# test empty
+aa	aa	aar		Afar
+ab	ab	abk		Abkhazian
+ae	ae	ave		Avestan
+af	af	afr		Afrikaans
+ak	ak	aka		Akan
+am	am	amh		Amharic
+an	an	arg		Aragonese
+ar	ar	ara		Arabic
+as	as	asm		Assamese
+av	av	ava		Avaric
+ay	ay	aym		Aymara
+az	az	aze		Azerbaijani
+ba	ba	bak		Bashkir
+be	be	bel		Belarusian
+bg	bg	bul		Bulgarian
+bi	bi	bis		Bislama
+bm	bm	bam		Bambara
+bn	bn	ben		Bengali
+bo	bo	bod		Tibetan
+br	br	bre		Breton
+bs	bs	bos		Bosnian
+ca	ca	cat		Catalan
+ce	ce	che		Chechen
+ch	ch	cha		Chamorro
+co	co	cos		Corsican
+cr	cr	cre		Cree
+cs	cs	ces		Czech
+cu	cu	chu		Church Slavic
+cv	cv	chv		Chuvash
+cy	cy	cym		Welsh
+da	da	dan		Danish
+de	de	deu		German
+dv	dv	div		Dhivehi
+dz	dz	dzo		Dzongkha
+ee	ee	ewe		Ewe
+el	el	ell		Modern Greek (1453-)
+en	en	eng		English
+eo	eo	epo		Esperanto
+es	es	spa		Spanish
+et	et	est		Estonian
+eu	eu	eus		Basque
+fa	fa	fas		Persian
+ff	ff	ful		Fulah
+fi	fi	fin		Finnish
+fj	fj	fij		Fijian
+fo	fo	fao		Faroese
+fr	fr	fra		French
+fy	fy	fry		Western Frisian
+ga	ga	gle		Irish
+gd	gd	gla		Scottish Gaelic
+gl	gl	glg		Galician
+gn	gn	grn		Guarani
+gu	gu	guj		Gujarati
+gv	gv	glv		Manx
+ha	ha	hau		Hausa
+he	he	heb		Hebrew
+hi	hi	hin		Hindi
+ho	ho	hmo		Hiri Motu
+hr	hr	hrv		Croatian
+ht	ht	hat		Haitian
+hu	hu	hun		Hungarian
+hy	hy	hye		Armenian
+hz	hz	her		Herero
+ia	ia	ina		Interlingua (International Auxiliary Language Association)
+id	id	ind		Indonesian
+ie	ie	ile		Interlingue
+ig	ig	ibo		Igbo
+ii	ii	iii		Sichuan Yi
+ik	ik	ipk		Inupiaq
+io	io	ido		Ido
+is	is	isl		Icelandic
+it	it	ita		Italian
+iu	iu	iku		Inuktitut
+ja	ja	jpn		Japanese
+jv	jv	jav		Javanese
+ka	ka	kat		Georgian
+kg	kg	kon		Kongo
+ki	ki	kik		Kikuyu
+kj	kj	kua		Kuanyama
+kk	kk	kaz		Kazakh
+kl	kl	kal		Kalaallisut
+km	km	khm		Central Khmer
+kn	kn	kan		Kannada
+ko	ko	kor		Korean
+kr	kr	kau		Kanuri
+ks	ks	kas		Kashmiri
+ku	ku	kur		Kurdish
+kv	kv	kom		Komi
+kw	kw	cor		Cornish
+ky	ky	kir		Kirghiz
+la	la	lat		Latin
+lb	lb	ltz		Luxembourgish
+lg	lg	lug		Ganda
+li	li	lim		Limburgan
+ln	ln	lin		Lingala
+lo	lo	lao		Lao
+lt	lt	lit		Lithuanian
+lu	lu	lub		Luba-Katanga
+lv	lv	lav		Latvian
+mg	mg	mlg		Malagasy
+mh	mh	mah		Marshallese
+mi	mi	mri		Maori
+mk	mk	mkd		Macedonian
+ml	ml	mal		Malayalam
+mn	mn	mon		Mongolian
+mr	mr	mar		Marathi
+ms	ms	msa		Malay (macrolanguage)
+mt	mt	mlt		Maltese
+my	my	mya		Burmese
+na	na	nau		Nauru
+nb	nb	nob		Norwegian Bokmål
+nd	nd	nde		North Ndebele
+ne	ne	nep		Nepali (macrolanguage)
+ng	ng	ndo		Ndonga
+nl	nl	nld		Dutch
+nn	nn	nno		Norwegian Nynorsk
+no	no	nor		Norwegian
+nr	nr	nbl		South Ndebele
+nv	nv	nav		Navajo
+ny	ny	nya		Nyanja
+oc	oc	oci		Occitan (post 1500)
+oj	oj	oji		Ojibwa
+om	om	orm		Oromo
+or	or	ori		Oriya (macrolanguage)
+os	os	oss		Ossetian
+pa	pa	pan		Panjabi
+pi	pi	pli		Pali
+pl	pl	pol		Polish
+ps	ps	pus		Pushto
+pt	pt	por		Portuguese
+qu	qu	que		Quechua
+rm	rm	roh		Romansh
+rn	rn	run		Rundi
+ro	ro	ron		Romanian
+ru	ru	rus		Russian
+rw	rw	kin		Kinyarwanda
+sa	sa	san		Sanskrit
+sc	sc	srd		Sardinian
+sd	sd	snd		Sindhi
+se	se	sme		Northern Sami
+sg	sg	sag		Sango
+sh		hbs		Serbo-Croatian
+si	si	sin		Sinhala
+sk	sk	slk		Slovak
+sl	sl	slv		Slovenian
+sm	sm	smo		Samoan
+sn	sn	sna		Shona
+so	so	som		Somali
+sq	sq	sqi		Albanian
+sr	sr	srp		Serbian
+ss	ss	ssw		Swati
+st	st	sot		Southern Sotho
+su	su	sun		Sundanese
+sv	sv	swe		Swedish
+sw	sw	swa		Swahili (macrolanguage)
+ta	ta	tam		Tamil
+te	te	tel		Telugu
+tg	tg	tgk		Tajik
+th	th	tha		Thai
+ti	ti	tir		Tigrinya
+tk	tk	tuk		Turkmen
+tl	tl	tgl		Tagalog
+tn	tn	tsn		Tswana
+to	to	ton		Tonga (Tonga Islands)
+tr	tr	tur		Turkish
+ts	ts	tso		Tsonga
+tt	tt	tat		Tatar
+tw	tw	twi		Twi
+ty	ty	tah		Tahitian
+ug	ug	uig		Uighur
+uk	uk	ukr		Ukrainian
+ur	ur	urd		Urdu
+uz	uz	uzb		Uzbek
+ve	ve	ven		Venda
+vi	vi	vie		Vietnamese
+vo	vo	vol		Volapük
+wa	wa	wln		Walloon
+wo	wo	wol		Wolof
+xh	xh	xho		Xhosa
+yi	yi	yid		Yiddish
+yo	yo	yor		Yoruba
+za	za	zha		Zhuang
+zh	zh	zho		Chinese
+zu	zu	zul		Zulu

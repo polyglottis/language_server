@@ -13,9 +13,10 @@ import (
 	"github.com/polyglottis/platform/language"
 )
 
-var inputFile = flag.String("in", "", "Input file (tab-delimited, columns: [code, iso693-1, iso693-3, iso693-6, comment])")
+var inputFile = flag.String("in", "", "Input file (tab-delimited, columns: [code, iso639-1, iso639-3, wikidata, comment])")
 
 func main() {
+	flag.Parse()
 
 	conf := config.Get()
 
@@ -45,9 +46,9 @@ func main() {
 
 		language := &language.Language{
 			Code:      language.Code(split[0]),
-			ISO_693_1: split[1],
-			ISO_693_3: split[2],
-			ISO_693_6: split[3],
+			ISO_639_1: split[1],
+			ISO_639_3: split[2],
+			WikiData: split[3],
 		}
 
 		err = c.Insert(split[4], language)
