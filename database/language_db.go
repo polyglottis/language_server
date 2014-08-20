@@ -93,3 +93,23 @@ func (db *DB) Dump() ([]string, error) {
 	}
 	return s, nil
 }
+
+func (db *DB) CodeList() ([]language.Code, error) {
+	list := make([]language.Code, 0)
+	rows, err := db.db.Query("select code from languages")
+	if err != nil {
+		return nil, err
+	}
+
+	for rows.Next() {
+		var code string
+		if err := rows.Scan(&code); err != nil {
+			return nil, err
+		}
+		list = append(list, language.Code(code))
+	}
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+	return list, nil
+}

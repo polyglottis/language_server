@@ -48,7 +48,7 @@ func main() {
 			Code:      language.Code(split[0]),
 			ISO_639_1: split[1],
 			ISO_639_3: split[2],
-			WikiData: split[3],
+			WikiData:  split[3],
 		}
 
 		err = c.Insert(split[4], language)

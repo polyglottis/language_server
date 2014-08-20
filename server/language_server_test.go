@@ -28,13 +28,5 @@ func TestExists(t *testing.T) {
 
 	s := &Server{db: db}
 
-	err = test.English(s)
-	if err != nil {
-		t.Error(err)
-	}
-
-	err = test.Invalid(s)
-	if err != nil {
-		t.Error(err)
-	}
+	test.All(s, t)
 }

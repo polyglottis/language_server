@@ -44,3 +44,7 @@ func (s *Server) GetCode(code string) (language.Code, error) {
 		return language.Unknown.Code, CodeNotFound
 	}
 }
+
+func (s *Server) List() ([]language.Code, error) {
+	return s.db.CodeList()
+}
