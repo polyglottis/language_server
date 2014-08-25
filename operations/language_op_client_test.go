@@ -48,7 +48,7 @@ func TestClientOperationServer(t *testing.T) {
 
 	err = c.Insert("Test", &language.Language{
 		Code:      language.Unknown.Code,
-		ISO_693_1: "test",
+		ISO_639_1: "test",
 	})
 	if err != nil {
 		t.Fatal(err)

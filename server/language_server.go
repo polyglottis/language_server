@@ -2,15 +2,11 @@
 package server
 
 import (
-	"errors"
-
 	"github.com/polyglottis/language_server/database"
 	"github.com/polyglottis/platform/language"
 	languageRpc "github.com/polyglottis/platform/language/rpc"
 	"github.com/polyglottis/rpc"
 )
-
-var CodeNotFound = errors.New("Language code not found")
 
 type Server struct {
 	db *database.DB
@@ -41,7 +37,7 @@ func (s *Server) GetCode(code string) (language.Code, error) {
 	if exists {
 		return language.Code(code), nil
 	} else {
-		return language.Unknown.Code, CodeNotFound
+		return language.Unknown.Code, language.CodeNotFound
 	}
 }
 
